@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hôtel MT — Agnibilékrou | Sur la route d'Abidjan au Ghana</title>
+<meta name="description" content="Hôtel MT à Agnibilékrou : chambres climatisées dès 20 000 FCFA, restaurant, bar lounge, piscine. Réservez en ligne, par téléphone ou WhatsApp.">
+
+<script type="application/ld+json">
+{ 
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hôtel MT",
+  "image": "https://hotelmt.com/images/hotel-mt-facade.jpg",
+  "telephone": "+225 07 59 70 70 62",
+  "priceRange": "20000-100000 XOF",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Quartier résidentiel, en face de la série",
+    "addressLocality": "Agnibilékrou",
+    "addressRegion": "Indénié-Djuablin",
+    "postalCode": "22100",
+    "addressCountry": "CI"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 7.131, "longitude": -3.204 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "126" },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi gratuit (Starlink)" },
+    { "@type": "LocationFeatureSpecification", "name": "Piscine" },
+    { "@type": "LocationFeatureSpecification", "name": "Restaurant" },
+    { "@type": "LocationFeatureSpecification", "name": "Bar lounge" },
+    { "@type": "LocationFeatureSpecification", "name": "Parking sécurisé" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#12141c;
+  --ink-2:#1b1f2b;
+  --ink-3:#242a3a;
+  --line: rgba(243,239,228,0.12);
+  --paper:#f3efe4;
+  --paper-dim:#cfc9b8;
+  --gold:#d6a749;
+  --gold-soft:#a9803c;
+  --clay:#c05b3c;
+  --leaf:#5c8a68;
+  --leaf-soft:#3f6b4f;
+  --radius:2px;
+  --ff-display:'Fraunces', 'Iowan Old Style', serif;
+  --ff-body:'Work Sans', 'Helvetica Neue', sans-serif;
+  --ff-mono:'IBM Plex Mono', ui-monospace, monospace;
+  --maxw:1180px;
+  --nav-h:78px;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth; scroll-padding-top: calc(var(--nav-h) + 12px);}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--ff-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+button{font-family:inherit; cursor:pointer;}
+ul{list-style:none;}
+
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+@media (max-width:640px){ .wrap{padding:0 20px;} }
+
+.eyebrow{
+  font-family:var(--ff-mono);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:14px;
+}
+.eyebrow::before{
+  content:"";
+  width:22px; height:1px; background:var(--gold);
+  display:inline-block;
+}
+
+h1,h2,h3,h4{ font-family:var(--ff-display); font-weight:600; letter-spacing:-0.01em; }
+.section-title{ font-size:clamp(28px,4vw,44px); line-height:1.08; margin-bottom:16px; }
+.section-sub{ color:var(--paper-dim); max-width:56ch; font-size:16px; }
+.section-head{ margin-bottom:48px; }
+.section-head.center{ text-align:center; margin-left:auto; margin-right:auto; }
+.section-head.center .section-sub{ margin-left:auto; margin-right:auto; }
+.section-head.center .eyebrow{ justify-content:center; }
+.section-head.center .eyebrow::before{ display:none; }
+
+section{ padding:96px 0; position:relative; }
+@media (max-width:768px){ section{ padding:64px 0; } }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:15px 28px;
+  font-family:var(--ff-mono); font-size:13px; letter-spacing:.06em; text-transform:uppercase;
+  border:1px solid transparent;
+  border-radius:var(--radius);
+  transition:transform .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
+  white-space:nowrap;
+}
+.btn:active{ transform:translateY(1px); }
+.btn-gold{ background:var(--gold); color:var(--ink); }
+.btn-gold:hover{ background:#e8bb60; }
+.btn-line{ border-color:rgba(243,239,228,0.35); color:var(--paper); }
+.btn-line:hover{ border-color:var(--gold); color:var(--gold); }
+.btn-clay{ background:var(--clay); color:var(--paper); }
+.btn-clay:hover{ background:#d16b4b; }
+.btn-sm{ padding:10px 18px; font-size:11px; }
+.btn:disabled{ opacity:.5; cursor:not-allowed; }
+.btn-block{ width:100%; }
+
+/* ===== Route / signature motif ===== */
+.route-divider{
+  height:64px; width:100%; overflow:hidden; position:relative;
+}
+.route-divider svg{ width:100%; height:100%; display:block; }
+
+/* ===== Navbar ===== */
+#navbar{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  height:var(--nav-h);
+  display:flex; align-items:center;
+  background:rgba(18,20,28,0.0);
+  border-bottom:1px solid transparent;
+  transition:background .3s ease, border-color .3s ease, height .3s ease;
+}
+#navbar.scrolled{
+  background:rgba(18,20,28,0.92);
+  backdrop-filter:blur(10px);
+  border-color:var(--line);
+  height:66px;
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; width:100%; gap:24px; }
+.brand{ display:flex; align-items:center; gap:12px; font-family:var(--ff-display); font-size:20px; letter-spacing:.03em; }
+.brand .mark{
+  width:34px; height:34px; border:1px solid var(--gold); border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--ff-mono); font-size:12px; color:var(--gold);
+}
+.nav-links{ display:flex; align-items:center; gap:30px; }
+.nav-links a{
+  font-family:var(--ff-mono); font-size:12.5px; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--paper-dim); position:relative; padding:6px 0;
+}
+.nav-links a::after{
+  content:""; position:absolute; left:0; bottom:0; height:1px; width:0; background:var(--gold);
+  transition:width .25s ease;
+}
+.nav-links a:hover, .nav-links a.active{ color:var(--paper); }
+.nav-links a:hover::after, .nav-links a.active::after{ width:100%; }
+.nav-actions{ display:flex; align-items:center; gap:14px; }
+.lang-toggle{
+  display:flex; border:1px solid rgba(243,239,228,0.3); border-radius:var(--radius); overflow:hidden;
+  font-family:var(--ff-mono); font-size:11px;
+}
+.lang-toggle button{
+  padding:7px 10px; background:transparent; color:var(--paper-dim); border:0;
+}
+.lang-toggle button.active{ background:var(--gold); color:var(--ink); }
+.nav-burger{
+  display:none; flex-direction:column; gap:5px; background:none; border:0; padding:6px;
+}
+.nav-burger span{ width:22px; height:1px; background:var(--paper); display:block; transition:transform .25s ease, opacity .25s ease; }
+.nav-burger.open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+.nav-burger.open span:nth-child(2){ opacity:0; }
+.nav-burger.open span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+@media (max-width:980px){
+  .nav-links{
+    position:fixed; top:var(--nav-h); left:0; right:0; bottom:0;
+    background:var(--ink); flex-direction:column; align-items:flex-start; gap:0;
+    padding:20px 24px; transform:translateX(100%); transition:transform .3s ease;
+    overflow-y:auto;
+  }
+  .nav-links.open{ transform:translateX(0); }
+  .nav-links a{ width:100%; padding:16px 0; border-bottom:1px solid var(--line); font-size:14px; }
+  .nav-burger{ display:flex; }
+  .nav-actions .btn-line.reserve-desktop{ display:none; }
+}
+@media (min-width:981px){
+  .nav-actions .lang-toggle{ display:flex; }
+}
+
+/* ===== Hero ===== */
+#home{
+  min-height:100svh;
+  display:flex; align-items:center;
+  padding-top:calc(var(--nav-h) + 30px);
+  background:
+    radial-gradient(1100px 620px at 82% -8%, rgba(214,167,73,0.16), transparent 60%),
+    radial-gradient(900px 520px at -5% 110%, rgba(92,138,104,0.14), transparent 55%),
+    var(--ink);
+  position:relative; overflow:hidden;
+}
+.hero-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:60px; align-items:center; }
+@media (max-width:980px){ .hero-grid{ grid-template-columns:1fr; gap:44px; } }
+
+.hero-kicker{
+  font-family:var(--ff-mono); font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold);
+  margin-bottom:22px; display:block;
+}
+.hero h1{ font-size:clamp(38px,5.4vw,64px); line-height:1.02; margin-bottom:22px; }
+.hero h1 em{ font-style:normal; color:var(--gold); }
+.hero p.lead{ color:var(--paper-dim); font-size:18px; max-width:52ch; margin-bottom:34px; }
+.hero-cta{ display:flex; gap:16px; flex-wrap:wrap; margin-bottom:52px; }
+
+.hero-stats{ display:flex; gap:36px; flex-wrap:wrap; }
+.hero-stats .stat b{ font-family:var(--ff-mono); font-size:30px; color:var(--paper); display:block; }
+.hero-stats .stat span{ font-size:12px; color:var(--paper-dim); letter-spacing:.03em; }
+
+/* mini route map inside hero */
+.route-card{
+  border:1px solid var(--line); background:rgba(243,239,228,0.03); border-radius:var(--radius);
+  padding:28px;
+}
+.route-card .route-title{ font-family:var(--ff-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--paper-dim); margin-bottom:18px; }
+.route-line{ position:relative; padding-left:26px; }
+.route-line::before{ content:""; position:absolute; left:5px; top:6px; bottom:6px; width:1px; background:linear-gradient(var(--gold), var(--clay), var(--leaf)); }
+.route-stop{ position:relative; padding-bottom:26px; }
+.route-stop:last-child{ padding-bottom:0; }
+.route-stop::before{
+  content:""; position:absolute; left:-26px; top:3px; width:9px; height:9px; border-radius:50%;
+  background:var(--ink); border:2px solid var(--gold);
+}
+.route-stop.current::before{ background:var(--gold); }
+.route-stop b{ display:block; font-size:14.5px; }
+.route-stop span{ font-size:12.5px; color:var(--paper-dim); font-family:var(--ff-mono); }
+
+/* quick-check widget */
+.quick-check{
+  margin-top:26px; border-top:1px dashed var(--line); padding-top:22px;
+  display:grid; grid-template-columns:1fr 1fr; gap:12px;
+}
+.quick-check label{ font-family:var(--ff-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--paper-dim); display:block; margin-bottom:6px; }
+.quick-check input, .quick-check select{
+  width:100%; background:var(--ink-2); border:1px solid var(--line); color:var(--paper);
+  padding:10px 10px; border-radius:var(--radius); font-family:var(--ff-body); font-size:14px;
+}
+.quick-check .full{ grid-column:1/-1; }
+
+/* ===== About ===== */
+#about{ background:var(--ink-2); }
+.about-grid{ display:grid; grid-template-columns:.95fr 1.05fr; gap:64px; align-items:flex-start; }
+@media (max-width:900px){ .about-grid{ grid-template-columns:1fr; gap:40px; } }
+
+.manager-card{
+  border:1px solid var(--line); padding:28px; border-radius:var(--radius); background:rgba(0,0,0,0.15);
+}
+.manager-card .photo{
+  width:64px; height:64px; border-radius:50%; overflow:hidden; border:1px solid var(--gold); margin-bottom:16px;
+  background:var(--ink-3); display:flex; align-items:center; justify-content:center; font-family:var(--ff-mono); color:var(--gold); font-size:13px;
+}
+.manager-card q{ display:block; font-family:var(--ff-display); font-size:19px; line-height:1.5; color:var(--paper); margin-bottom:16px; quotes:none; }
+.manager-card .who b{ display:block; font-size:14px; }
+.manager-card .who span{ font-size:12.5px; color:var(--paper-dim); }
+
+.about-copy p{ color:var(--paper-dim); margin-bottom:18px; max-width:60ch; }
+.about-stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); margin-top:32px; border:1px solid var(--line); }
+.about-stats div{ background:var(--ink-2); padding:20px 16px; }
+.about-stats b{ font-family:var(--ff-mono); font-size:26px; display:block; color:var(--gold); }
+.about-stats span{ font-size:11.5px; color:var(--paper-dim); }
+
+/* ===== Rooms ===== */
+.filter-bar{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:38px; }
+.filter-chip{
+  padding:9px 18px; border:1px solid rgba(243,239,228,0.25); border-radius:100px; background:transparent; color:var(--paper-dim);
+  font-family:var(--ff-mono); font-size:12px; letter-spacing:.04em; transition:all .2s ease;
+}
+.filter-chip:hover{ border-color:var(--gold); color:var(--paper); }
+.filter-chip.active{ background:var(--gold); border-color:var(--gold); color:var(--ink); }
+
+.rooms-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+@media (max-width:980px){ .rooms-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:640px){ .rooms-grid{ grid-template-columns:1fr; } }
+
+.room-card{
+  border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--ink-2);
+  transition:opacity .3s ease, transform .3s ease;
+  display:flex; flex-direction:column;
+}
+.room-card.hide{ display:none; }
+.room-media{ aspect-ratio:4/3; background:linear-gradient(135deg, var(--ink-3), var(--ink)); position:relative; overflow:hidden; }
+.room-media .ph{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--ff-mono); font-size:11px; color:var(--paper-dim); letter-spacing:.1em; text-transform:uppercase; text-align:center; padding:10px;}
+.room-media .tag{
+  position:absolute; top:14px; left:14px; background:rgba(18,20,28,0.75); border:1px solid var(--line);
+  font-family:var(--ff-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; padding:5px 10px; border-radius:100px;
+}
+.room-body{ padding:22px; display:flex; flex-direction:column; gap:12px; flex:1; }
+.room-body h3{ font-size:20px; }
+.room-body p{ color:var(--paper-dim); font-size:14px; flex:1; }
+.room-price{ display:flex; align-items:baseline; gap:6px; font-family:var(--ff-mono); }
+.room-price b{ font-size:20px; color:var(--gold); }
+.room-price span{ font-size:11.5px; color:var(--paper-dim); }
+.room-foot{ display:flex; gap:10px; margin-top:4px; }
+
+/* ===== Services ===== */
+#services{ background:var(--ink-2); }
+.services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+@media (max-width:900px){ .services-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:600px){ .services-grid{ grid-template-columns:1fr; } }
+.service-card{ background:var(--ink-2); padding:34px 28px; }
+.service-card .num{ font-family:var(--ff-mono); color:var(--gold); font-size:12px; display:block; margin-bottom:16px; }
+.service-card h3{ font-size:19px; margin-bottom:10px; }
+.service-card p{ color:var(--paper-dim); font-size:14px; }
+
+/* ===== Booking ===== */
+#booking{ position:relative; }
+.booking-panel{
+  display:grid; grid-template-columns:1fr 1.3fr; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+}
+@media (max-width:900px){ .booking-panel{ grid-template-columns:1fr; } }
+.booking-side{
+  background:linear-gradient(160deg, var(--ink-3), var(--ink)); padding:40px 34px; display:flex; flex-direction:column; justify-content:space-between; gap:30px;
+}
+.booking-side h3{ font-size:24px; margin-bottom:12px; }
+.booking-side p{ color:var(--paper-dim); font-size:14.5px; }
+.contact-line{ display:flex; align-items:center; gap:12px; padding:12px 0; border-top:1px solid var(--line); }
+.contact-line:last-of-type{ border-bottom:1px solid var(--line); }
+.contact-line .ic{ font-family:var(--ff-mono); color:var(--gold); font-size:13px; }
+.contact-line a, .contact-line span{ font-size:14px; }
+
+.booking-form{ background:var(--ink-2); padding:40px 34px; }
+.form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.form-grid .full{ grid-column:1/-1; }
+.field label{ font-family:var(--ff-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--paper-dim); display:block; margin-bottom:7px; }
+.field input, .field select, .field textarea{
+  width:100%; background:var(--ink); border:1px solid var(--line); color:var(--paper);
+  padding:12px 13px; border-radius:var(--radius); font-family:var(--ff-body); font-size:14.5px;
+}
+.field input:focus, .field select:focus, .field textarea:focus, button:focus-visible, a:focus-visible{
+  outline:2px solid var(--gold); outline-offset:2px;
+}
+.field textarea{ resize:vertical; min-height:90px; }
+.field .err{ color:var(--clay); font-size:12px; margin-top:6px; display:none; font-family:var(--ff-mono); }
+.field.invalid input, .field.invalid select, .field.invalid textarea{ border-color:var(--clay); }
+.field.invalid .err{ display:block; }
+
+.booking-summary{
+  margin-top:22px; padding:18px 20px; border:1px dashed var(--line); border-radius:var(--radius);
+  display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;
+  font-family:var(--ff-mono); font-size:13px;
+}
+.booking-summary .total b{ font-size:22px; color:var(--gold); display:block; font-family:var(--ff-mono); }
+.booking-actions{ display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; }
+.booking-success{ display:none; padding:24px; border:1px solid var(--leaf); border-radius:var(--radius); background:rgba(92,138,104,0.08); }
+.booking-success.show{ display:block; }
+.booking-success h4{ color:var(--leaf); margin-bottom:8px; font-size:18px; }
+.booking-success p{ color:var(--paper-dim); font-size:14px; margin-bottom:16px; }
+
+/* ===== Gallery ===== */
+.gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+@media (max-width:900px){ .gallery-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:600px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+.gallery-item{
+  aspect-ratio:1/1; background:linear-gradient(135deg,var(--ink-3),var(--ink-2)); border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center; cursor:pointer; position:relative; overflow:hidden;
+  transition:transform .25s ease;
+}
+.gallery-item:hover{ transform:translateY(-3px); border-color:var(--gold); }
+.gallery-item span{ font-family:var(--ff-mono); font-size:10.5px; color:var(--paper-dim); text-align:center; padding:8px; text-transform:uppercase; letter-spacing:.06em; }
+.gallery-item.hide{ display:none; }
+
+.lightbox{
+  position:fixed; inset:0; background:rgba(10,11,16,0.94); z-index:2000; display:none;
+  align-items:center; justify-content:center; padding:40px;
+}
+.lightbox.open{ display:flex; }
+.lightbox-inner{ max-width:800px; width:100%; text-align:center; }
+.lightbox-frame{
+  aspect-ratio:4/3; background:var(--ink-3); border:1px solid var(--line); display:flex; align-items:center; justify-content:center;
+  font-family:var(--ff-mono); color:var(--paper-dim); font-size:13px; margin-bottom:18px;
+}
+.lightbox-controls{ display:flex; justify-content:space-between; align-items:center; }
+.lightbox-close{ position:absolute; top:24px; right:28px; background:none; border:1px solid var(--line); color:var(--paper); width:40px; height:40px; border-radius:50%; font-size:18px; }
+
+/* ===== Testimonials ===== */
+#testimonials{ background:var(--ink-2); }
+.tcarousel{ position:relative; max-width:760px; margin:0 auto; }
+.tslide{ display:none; text-align:center; padding:10px 10px 0; }
+.tslide.active{ display:block; }
+.tslide q{ display:block; font-family:var(--ff-display); font-size:clamp(19px,2.6vw,26px); line-height:1.5; color:var(--paper); margin-bottom:26px; quotes:none; }
+.tslide .who{ font-family:var(--ff-mono); font-size:12.5px; color:var(--gold); }
+.tslide .who span{ color:var(--paper-dim); display:block; margin-top:4px; }
+.tcontrols{ display:flex; align-items:center; justify-content:center; gap:22px; margin-top:34px; }
+.tarrow{ background:none; border:1px solid var(--line); color:var(--paper); width:38px; height:38px; border-radius:50%; }
+.tarrow:hover{ border-color:var(--gold); color:var(--gold); }
+.tdots{ display:flex; gap:8px; }
+.tdot{ width:7px; height:7px; border-radius:50%; background:var(--line); border:0; padding:0; }
+.tdot.active{ background:var(--gold); }
+
+/* ===== FAQ ===== */
+.faq-list{ max-width:820px; margin:0 auto; border-top:1px solid var(--line); }
+.faq-item{ border-bottom:1px solid var(--line); }
+.faq-q{
+  width:100%; background:none; border:0; color:var(--paper); text-align:left; padding:22px 4px;
+  display:flex; justify-content:space-between; align-items:center; gap:20px; font-family:var(--ff-display); font-size:17px;
+}
+.faq-q .plus{ font-family:var(--ff-mono); color:var(--gold); font-size:18px; transition:transform .25s ease; flex-shrink:0; }
+.faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+.faq-a p{ padding:0 4px 22px; color:var(--paper-dim); font-size:14.5px; max-width:70ch; }
+
+/* ===== Contact ===== */
+#contact{ background:var(--ink-2); }
+.contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:50px; }
+@media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+.map-frame{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; height:360px; }
+.map-frame iframe{ width:100%; height:100%; border:0; filter:grayscale(0.4) invert(0.92) contrast(0.9); }
+
+/* ===== Newsletter ===== */
+#newsletter{ text-align:center; }
+.nl-form{ display:flex; gap:12px; max-width:460px; margin:28px auto 0; }
+.nl-form input{ flex:1; background:var(--ink-2); border:1px solid var(--line); color:var(--paper); padding:14px 16px; border-radius:var(--radius); }
+.nl-msg{ margin-top:14px; font-family:var(--ff-mono); font-size:13px; color:var(--leaf); display:none; }
+.nl-msg.show{ display:block; }
+@media (max-width:560px){ .nl-form{ flex-direction:column; } }
+
+/* ===== Footer ===== */
+footer{ background:var(--ink-3); border-top:1px solid var(--line); padding:70px 0 26px; }
+.foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px; margin-bottom:50px; }
+@media (max-width:800px){ .foot-grid{ grid-template-columns:1fr 1fr; } }
+.foot-grid h4{ font-family:var(--ff-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--paper-dim); margin-bottom:18px; }
+.foot-grid li{ margin-bottom:10px; }
+.foot-grid a{ color:var(--paper-dim); font-size:14px; }
+.foot-grid a:hover{ color:var(--gold); }
+.foot-brand p{ color:var(--paper-dim); font-size:14px; margin:14px 0 20px; max-width:34ch; }
+.social-row{ display:flex; gap:10px; }
+.social-row a{ width:36px; height:36px; border:1px solid var(--line); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:var(--ff-mono); font-size:11px; }
+.social-row a:hover{ border-color:var(--gold); color:var(--gold); }
+.foot-bottom{ border-top:1px solid var(--line); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:12.5px; color:var(--paper-dim); }
+.foot-bottom .legal-links{ display:flex; gap:18px; }
+.foot-bottom button.legal-links-link{ background:none; border:0; color:var(--paper-dim); font-size:12.5px; text-decoration:underline; text-underline-offset:3px; }
+.foot-bottom button.legal-links-link:hover{ color:var(--gold); }
+
+/* ===== Floating buttons ===== */
+.floaters{ position:fixed; right:22px; bottom:22px; z-index:900; display:flex; flex-direction:column; gap:12px; align-items:flex-end; }
+.fab{
+  width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-family:var(--ff-mono); font-size:11px; box-shadow:0 8px 24px rgba(0,0,0,0.4); border:1px solid var(--line);
+  transition:transform .2s ease, opacity .2s ease;
+}
+.fab-whatsapp{ background:var(--leaf-soft); color:var(--paper); }
+.fab-whatsapp:hover{ transform:scale(1.06); }
+.fab-top{ background:var(--ink-2); color:var(--paper); opacity:0; pointer-events:none; }
+.fab-top.show{ opacity:1; pointer-events:auto; }
+
+/* ===== Modal (legal) ===== */
+.modal-overlay{ position:fixed; inset:0; background:rgba(10,11,16,0.85); z-index:2100; display:none; align-items:center; justify-content:center; padding:24px; }
+.modal-overlay.open{ display:flex; }
+.modal-box{ background:var(--ink-2); border:1px solid var(--line); max-width:640px; width:100%; max-height:80vh; overflow-y:auto; padding:36px; border-radius:var(--radius); position:relative; }
+.modal-box h3{ font-size:22px; margin-bottom:16px; }
+.modal-box p{ color:var(--paper-dim); font-size:14px; margin-bottom:14px; }
+.modal-close{ position:absolute; top:18px; right:18px; background:none; border:1px solid var(--line); color:var(--paper); width:34px; height:34px; border-radius:50%; }
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }
+
+.sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+.skip-link{
+  position:fixed; top:-60px; left:12px; background:var(--gold); color:var(--ink); padding:10px 16px; z-index:3000;
+  font-family:var(--ff-mono); font-size:12px; transition:top .2s ease;
+}
+.skip-link:focus{ top:12px; }
+</style>
+</head>
+<body>
+
+<a href="#home" class="skip-link">Aller au contenu principal</a>
+
+<!-- ===================== NAVBAR ===================== -->
+<header id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand"><span class="mark">MT</span> Hôtel MT</a>
+
+    <nav id="navLinks" class="nav-links" aria-label="Navigation principale">
+      <a href="#home" data-i18n="nav.home">Accueil</a>
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#rooms" data-i18n="nav.rooms">Chambres</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
+      <a href="#testimonials" data-i18n="nav.reviews">Avis</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle" style="margin-top:18px;">
+        <button type="button" data-lang-btn="fr" class="active">FR</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-toggle" style="display:none;">
+        <button type="button" data-lang-btn="fr" class="active">FR</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <a href="#booking" class="btn btn-line reserve-desktop" data-i18n="nav.book">Réserver</a>
+      <button id="navBurger" class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="hero-kicker" data-i18n="hero.kicker">Agnibilékrou · Indénié-Djuablin · Côte d'Ivoire</span>
+      <h1 data-i18n="hero.title">Une étape <em>sûre et raffinée</em> sur la route d'Abidjan au Ghana</h1>
+      <p class="lead" data-i18n="hero.lead">Chambres climatisées, restaurant gastronomique, bar lounge et piscine — dans un hôtel pensé pour les voyageurs d'affaires, les familles et les transitaires de la frontière.</p>
+      <div class="hero-cta">
+        <a href="#booking" class="btn btn-gold" data-i18n="hero.cta1">Vérifier les disponibilités</a>
+        <a href="#rooms" class="btn btn-line" data-i18n="hero.cta2">Voir les chambres</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>39</b><span data-i18n="hero.stat1">Chambres &amp; suites</span></div>
+        <div class="stat"><b>08</b><span data-i18n="hero.stat2">Années d'expérience</span></div>
+        <div class="stat"><b>4.7/5</b><span data-i18n="hero.stat3">126 avis clients</span></div>
+        <div class="stat"><b>24/7</b><span data-i18n="hero.stat4">Réception ouverte</span></div>
+      </div>
+    </div>
+
+    <div class="route-card reveal in">
+      <div class="route-title" data-i18n="hero.routeTitle">Sur votre itinéraire</div>
+      <div class="route-line">
+        <div class="route-stop"><b>Abidjan</b><span data-i18n="hero.d1">≈ 280 km au sud-ouest</span></div>
+        <div class="route-stop"><b>Abengourou</b><span data-i18n="hero.d2">≈ 45 km — étape la plus proche</span></div>
+        <div class="route-stop current"><b>Agnibilékrou — Hôtel MT</b><span data-i18n="hero.d3">Quartier résidentiel, en face de la série</span></div>
+        <div class="route-stop"><b data-i18n="hero.ghana">Frontière du Ghana</b><span data-i18n="hero.d4">Accès facilité pour les voyageurs en transit</span></div>
+      </div>
+
+      <form class="quick-check" id="quickCheckForm">
+        <div class="full"><label for="qcIn" data-i18n="hero.arrival">Arrivée</label><input type="date" id="qcIn" required></div>
+        <div><label for="qcOut" data-i18n="hero.departure">Départ</label><input type="date" id="qcOut" required></div>
+        <div><label for="qcRoom" data-i18n="hero.roomType">Chambre</label>
+          <select id="qcRoom">
+            <option value="" data-i18n="hero.allCategories">Toutes catégories</option>
+            <option value="standard">Standard — 20 000</option>
+            <option value="junior">Junior — 25 000</option>
+            <option value="senior">Senior — 30 000</option>
+            <option value="mini-suite">Mini Suite — 50 000</option>
+            <option value="suite-prestige">Suite Prestige — 70 000</option>
+            <option value="suite-royale">Suite Royale — 100 000</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block full" data-i18n="hero.checkBtn">Vérifier la disponibilité</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="route-divider" aria-hidden="true">
+  <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+    <path d="M0,32 C200,10 300,54 500,32 C700,10 800,54 1000,32 C1100,20 1150,40 1200,32" fill="none" stroke="var(--line)" stroke-width="1"/>
+    <circle cx="120" cy="27" r="3" fill="var(--gold)"/>
+    <circle cx="560" cy="27" r="3" fill="var(--clay)"/>
+    <circle cx="1000" cy="33" r="3" fill="var(--leaf)"/>
+  </svg>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="manager-card reveal">
+      <div class="photo">MT</div>
+      <q data-i18n="about.quote">« Depuis 2017, l'Hôtel MT incarne notre vision d'une hospitalité sincère, ancrée dans les valeurs ivoiriennes d'accueil et de générosité. »</q>
+      <div class="who">
+        <b>M. Dalegou Augustin</b>
+        <span data-i18n="about.role">Directeur Général — Hôtel MT Agnibilékrou</span>
+      </div>
+    </div>
+
+    <div class="about-copy reveal">
+      <div class="eyebrow" data-i18n="about.eyebrow">Notre histoire</div>
+      <h2 class="section-title" data-i18n="about.title">Fondé en 2017, ancré dans la région du cacao</h2>
+      <p data-i18n="about.p1">Situé au quartier résidentiel, en face de la série, l'Hôtel MT est devenu une référence de l'hébergement à Agnibilékrou, ville de la région Indénié-Djuablin réputée pour sa production de cacao et sa proximité avec la frontière ghanéenne.</p>
+      <p data-i18n="about.p2">Notre équipe combine une hospitalité chaleureuse et des standards modernes : 39 chambres, un restaurant gastronomique, un bar lounge, une piscine à débordement et une salle de conférence modulable de 80 places.</p>
+      <div class="about-stats">
+        <div><b>39</b><span data-i18n="about.s1">Chambres</span></div>
+        <div><b>02</b><span data-i18n="about.s2">Restaurant &amp; Bar</span></div>
+        <div><b>80</b><span data-i18n="about.s3">Places en conférence</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROOMS ===================== -->
+<section id="rooms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="rooms.eyebrow">Hébergement</div>
+      <h2 class="section-title" data-i18n="rooms.title">Six catégories de chambres, un même souci du détail</h2>
+      <p class="section-sub" data-i18n="rooms.sub">Filtrez par budget pour trouver la chambre adaptée à votre séjour.</p>
+    </div>
+
+    <div class="filter-bar" id="roomFilters" role="group" aria-label="Filtrer les chambres">
+      <button class="filter-chip active" data-filter="all" data-i18n="rooms.filterAll">Toutes</button>
+      <button class="filter-chip" data-filter="economique" data-i18n="rooms.filterEco">Économique · &lt; 30 000</button>
+      <button class="filter-chip" data-filter="confort" data-i18n="rooms.filterConfort">Confort · 30 000–50 000</button>
+      <button class="filter-chip" data-filter="prestige" data-i18n="rooms.filterPrestige">Prestige · 50 000+</button>
+    </div>
+
+    <div class="rooms-grid" id="roomsGrid">
+      <!-- room cards injected by JS from ROOMS data -->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="services.eyebrow">Prestations</div>
+      <h2 class="section-title" data-i18n="services.title">Tout ce qu'il faut pour un séjour sans friction</h2>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <span class="num">01</span>
+        <h3 data-i18n="services.s1t">Restauration gastronomique</h3>
+        <p data-i18n="services.s1p">Cuisine ivoirienne et internationale, produits locaux, service en salle ou en chambre.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">02</span>
+        <h3 data-i18n="services.s2t">Événements &amp; conférences</h3>
+        <p data-i18n="services.s2p">Salle modulable jusqu'à 80 personnes, équipée pour séminaires et réceptions.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">03</span>
+        <h3 data-i18n="services.s3t">Piscine &amp; bar lounge</h3>
+        <p data-i18n="services.s3p">Piscine à débordement et carte de cocktails pour vos soirées détente.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">04</span>
+        <h3 data-i18n="services.s4t">Wi-Fi haut débit (Starlink)</h3>
+        <p data-i18n="services.s4p">Connexion gratuite dans toutes les chambres et espaces communs.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">05</span>
+        <h3 data-i18n="services.s5t">Blanchisserie &amp; parking sécurisé</h3>
+        <p data-i18n="services.s5p">Service de blanchisserie sur demande et parking gardé, gratuit pour les clients.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">06</span>
+        <h3 data-i18n="services.s6t">Réception 24h/24</h3>
+        <p data-i18n="services.s6p">Arrivées tardives et départs matinaux gérés à toute heure, tous les jours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOKING ===================== -->
+<section id="booking">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="booking.eyebrow">Réservation</div>
+      <h2 class="section-title" data-i18n="booking.title">Réservez en ligne, confirmez par WhatsApp</h2>
+      <p class="section-sub" data-i18n="booking.sub">Le tarif se calcule automatiquement selon vos dates. Aucune carte bancaire requise pour réserver.</p>
+    </div>
+
+    <div class="booking-panel reveal">
+      <div class="booking-side">
+        <div>
+          <h3 data-i18n="booking.sideTitle">Besoin d'aide ?</h3>
+          <p data-i18n="booking.sideText">Notre équipe est disponible 24h/24 pour confirmer votre réservation par téléphone ou WhatsApp.</p>
+        </div>
+        <div>
+          <div class="contact-line"><span class="ic">TEL</span><a href="tel:+2250759707062">+225 07 59 70 70 62</a></div>
+          <div class="contact-line"><span class="ic">WA</span><a href="https://wa.me/2250759707062" target="_blank" rel="noopener">WhatsApp</a></div>
+          <div class="contact-line"><span class="ic">IN</span><span data-i18n="booking.checkinout">Check-in 14h00 · Check-out 12h00</span></div>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <form id="bookingForm" novalidate>
+          <div class="form-grid">
+            <div class="field full">
+              <label for="bkName" data-i18n="booking.name">Nom complet</label>
+              <input type="text" id="bkName" name="name" required>
+              <div class="err" data-i18n="booking.errRequired">Ce champ est requis.</div>
+            </div>
+            <div class="field">
+              <label for="bkEmail" data-i18n="booking.email">Email</label>
+              <input type="email" id="bkEmail" name="email" required>
+              <div class="err" data-i18n="booking.errEmail">Adresse email invalide.</div>
+            </div>
+            <div class="field">
+              <label for="bkPhone" data-i18n="booking.phone">Téléphone</label>
+              <input type="tel" id="bkPhone" name="phone" placeholder="+225 ..." required>
+              <div class="err" data-i18n="booking.errPhone">Numéro invalide (min. 8 chiffres).</div>
+            </div>
+            <div class="field">
+              <label for="bkIn" data-i18n="hero.arrival">Date d'arrivée</label>
+              <input type="date" id="bkIn" name="checkin" required>
+              <div class="err" data-i18n="booking.errRequired">Ce champ est requis.</div>
+            </div>
+            <div class="field">
+              <label for="bkOut" data-i18n="hero.departure">Date de départ</label>
+              <input type="date" id="bkOut" name="checkout" required>
+              <div class="err" id="bkOutErr" data-i18n="booking.errDates">Le départ doit être après l'arrivée.</div>
+            </div>
+            <div class="field">
+              <label for="bkRoom" data-i18n="hero.roomType">Type de chambre</label>
+              <select id="bkRoom" name="room" required></select>
+            </div>
+            <div class="field">
+              <label for="bkGuests" data-i18n="booking.guests">Nombre de personnes</label>
+              <select id="bkGuests" name="guests">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="bkNote" data-i18n="booking.note">Message (optionnel)</label>
+              <textarea id="bkNote" name="note" data-i18n-placeholder="booking.notePh" placeholder="Demandes particulières, heure d'arrivée..."></textarea>
+            </div>
+          </div>
+
+          <div class="booking-summary">
+            <div>
+              <div data-i18n="booking.summaryLabel">Durée du séjour</div>
+              <strong id="bkNights">— <span data-i18n="booking.nights">nuit(s)</span></strong>
+            </div>
+            <div class="total">
+              <span data-i18n="booking.totalLabel">Total estimé</span>
+              <b id="bkTotal">0 XOF</b>
+            </div>
+          </div>
+
+          <div class="booking-actions">
+            <button type="submit" class="btn btn-gold" data-i18n="booking.submit">Confirmer la réservation</button>
+            <button type="button" id="bkWhatsapp" class="btn btn-line" data-i18n="booking.viaWhatsapp">Pré-remplir sur WhatsApp</button>
+          </div>
+        </form>
+
+        <div class="booking-success" id="bookingSuccess">
+          <h4 data-i18n="booking.successTitle">Demande enregistrée ✓</h4>
+          <p id="bookingSuccessText" data-i18n="booking.successText">Merci ! Récapitulatif ci-dessous — confirmez par téléphone ou WhatsApp pour garantir votre chambre.</p>
+          <div class="booking-actions">
+            <a id="successWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-clay" data-i18n="booking.confirmWhatsapp">Confirmer par WhatsApp</a>
+            <a href="tel:+2250759707062" class="btn btn-line" data-i18n="booking.confirmPhone">Confirmer par téléphone</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="gallery.eyebrow">Galerie</div>
+      <h2 class="section-title" data-i18n="gallery.title">L'hôtel en images</h2>
+    </div>
+    <div class="filter-bar" id="galleryFilters">
+      <button class="filter-chip active" data-gfilter="all" data-i18n="gallery.all">Tout</button>
+      <button class="filter-chip" data-gfilter="chambres" data-i18n="gallery.rooms">Chambres</button>
+      <button class="filter-chip" data-gfilter="restaurant" data-i18n="gallery.restaurant">Restaurant</button>
+      <button class="filter-chip" data-gfilter="bar" data-i18n="gallery.bar">Bar</button>
+      <button class="filter-chip" data-gfilter="piscine" data-i18n="gallery.pool">Piscine</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button>
+  <div class="lightbox-inner">
+    <div class="lightbox-frame" id="lightboxFrame">—</div>
+    <div class="lightbox-controls">
+      <button class="tarrow" id="lightboxPrev" aria-label="Image précédente">‹</button>
+      <span id="lightboxCaption" style="font-family:var(--ff-mono); font-size:12px; color:var(--paper-dim);"></span>
+      <button class="tarrow" id="lightboxNext" aria-label="Image suivante">›</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="testi.eyebrow">Témoignages</div>
+      <h2 class="section-title" data-i18n="testi.title">Ce que disent nos clients</h2>
+    </div>
+    <div class="tcarousel reveal" id="tcarousel">
+      <div class="tslide active">
+        <q data-i18n="testi.q1">Un séjour exceptionnel ! Le service est impeccable, les chambres spacieuses et le bar lounge tout simplement parfait pour se détendre.</q>
+        <div class="who">Aïssata Diarra<span>Paris, France</span></div>
+      </div>
+      <div class="tslide">
+        <q data-i18n="testi.q2">L'emplacement est parfait sur la route vers le Ghana, la vue depuis notre suite était à couper le souffle. Personnel très attentionné.</q>
+        <div class="who">Kwame Nabah<span>Accra, Ghana</span></div>
+      </div>
+      <div class="tslide">
+        <q data-i18n="testi.q3">Nous avons organisé notre séminaire annuel ici. Salle bien équipée, restauration excellente et Wi-Fi Starlink irréprochable.</q>
+        <div class="who">Fatou Bamba<span>Dakar, Sénégal</span></div>
+      </div>
+      <div class="tcontrols">
+        <button class="tarrow" id="tPrev" aria-label="Témoignage précédent">‹</button>
+        <div class="tdots" id="tDots"></div>
+        <button class="tarrow" id="tNext" aria-label="Témoignage suivant">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</div>
+      <h2 class="section-title" data-i18n="faq.title">Tout savoir avant votre séjour</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="eyebrow" data-i18n="contact.eyebrow">Contact</div>
+      <h2 class="section-title" data-i18n="contact.title">Nous écrire</h2>
+      <form id="contactForm" novalidate style="margin-top:28px; display:flex; flex-direction:column; gap:16px;">
+        <div class="field"><label for="cName" data-i18n="booking.name">Nom complet</label><input type="text" id="cName" required><div class="err" data-i18n="booking.errRequired">Ce champ est requis.</div></div>
+        <div class="field"><label for="cEmail" data-i18n="booking.email">Email</label><input type="email" id="cEmail" required><div class="err" data-i18n="booking.errEmail">Adresse email invalide.</div></div>
+        <div class="field"><label for="cSubject" data-i18n="contact.subject">Sujet</label><input type="text" id="cSubject" required><div class="err" data-i18n="booking.errRequired">Ce champ est requis.</div></div>
+        <div class="field"><label for="cMsg" data-i18n="booking.note">Message</label><textarea id="cMsg" required></textarea><div class="err" data-i18n="booking.errRequired">Ce champ est requis.</div></div>
+        <button type="submit" class="btn btn-gold" data-i18n="contact.send">Envoyer le message</button>
+        <p id="contactSuccess" style="display:none; color:var(--leaf); font-family:var(--ff-mono); font-size:13px;" data-i18n="contact.success">Message envoyé ✓ Nous répondons sous 24h.</p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=7.131,-3.204&z=15&output=embed" loading="lazy" title="Localisation de l'Hôtel MT"></iframe>
+      </div>
+      <div style="margin-top:22px;">
+        <div class="contact-line"><span class="ic">ADR</span><span data-i18n="contact.address">Quartier résidentiel, en face de la série, Agnibilékrou</span></div>
+        <div class="contact-line"><span class="ic">TEL</span><a href="tel:+2250759707062">+225 07 59 70 70 62</a> <button type="button" id="copyPhone" class="btn btn-sm btn-line" style="margin-left:10px;" data-i18n="contact.copy">Copier</button></div>
+        <div class="contact-line"><span class="ic">MAIL</span><a href="mailto:contact@hotelmt.com">contact@hotelmt.com</a></div>
+        <div class="contact-line"><span class="ic">HRS</span><span data-i18n="contact.hours">Lundi – Dimanche, 24h/24</span></div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=7.131,-3.204&travelmode=driving" target="_blank" rel="noopener" class="btn btn-line" style="margin-top:18px;" data-i18n="contact.directions">🚗 Voir l'itinéraire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+<section id="newsletter">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="justify-content:center;" data-i18n="nl.eyebrow">Newsletter</div>
+    <h2 class="section-title" style="text-align:center;" data-i18n="nl.title">Recevez nos offres spéciales</h2>
+    <form class="nl-form" id="nlForm">
+      <label class="sr-only" for="nlEmail" data-i18n="booking.email">Email</label>
+      <input type="email" id="nlEmail" data-i18n-placeholder="nl.ph" placeholder="Votre adresse email" required>
+      <button type="submit" class="btn btn-gold" data-i18n="nl.submit">S'abonner</button>
+    </form>
+    <p class="nl-msg" id="nlMsg" data-i18n="nl.success">Merci ! Vous recevrez bientôt nos offres. ✓</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand"><span class="mark">MT</span> Hôtel MT</div>
+        <p data-i18n="footer.tagline">L'étape de référence à Agnibilékrou : confort moderne, hospitalité ivoirienne et service disponible 24h/24.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/ResidenceMiezanTchekou/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/2250759707062" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a href="tel:+2250759707062" aria-label="Téléphone">TEL</a>
+          <a href="mailto:contact@hotelmt.com" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.linksTitle">Liens rapides</h4>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+          <li><a href="#rooms" data-i18n="nav.rooms">Chambres</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.servicesTitle">Services</h4>
+        <ul>
+          <li><a href="#rooms" data-i18n="footer.s1">Hébergement</a></li>
+          <li><a href="#services" data-i18n="footer.s2">Restauration</a></li>
+          <li><a href="#services" data-i18n="footer.s3">Événements</a></li>
+          <li><a href="#services" data-i18n="footer.s4">Piscine &amp; bar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.newsletterTitle">Newsletter</h4>
+        <p style="color:var(--paper-dim); font-size:13.5px;" data-i18n="footer.newsletterText">Abonnez-vous plus haut sur la page pour recevoir nos offres et actualités.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Hôtel MT. <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+      <div class="legal-links">
+        <button type="button" class="legal-links-link" data-modal="mentions" data-i18n="footer.legal">Mentions légales</button>
+        <button type="button" class="legal-links-link" data-modal="confidentialite" data-i18n="footer.privacy">Confidentialité</button>
+        <button type="button" class="legal-links-link" data-modal="cgv" data-i18n="footer.terms">CGV</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATERS ===================== -->
+<div class="floaters">
+  <button class="fab fab-top" id="fabTop" aria-label="Retour en haut">↑</button>
+  <a class="fab fab-whatsapp" href="https://wa.me/2250759707062?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20l'H%C3%B4tel%20MT." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+</div>
+
+<!-- ===================== LEGAL MODALS ===================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+    <div id="modalMentions" style="display:none;">
+      <h3>Mentions légales</h3>
+      <p>Hôtel MT — établissement hôtelier situé Quartier résidentiel, en face de la série, Agnibilékrou, Indénié-Djuablin, Côte d'Ivoire.</p>
+      <p>Directeur de la publication : M. Dalegou Augustin. Hébergement du site : à préciser. Contact : contact@hotelmt.com — +225 07 59 70 70 62.</p>
+      <p>Ce site est un modèle de démonstration destiné à remplacer une future version du site officiel hotelmt.com ; les mentions légales complètes (RCCM, régime fiscal, etc.) doivent être complétées avant mise en ligne.</p>
+    </div>
+    <div id="modalConfidentialite" style="display:none;">
+      <h3>Politique de confidentialité</h3>
+      <p>Les informations transmises via les formulaires (réservation, contact, newsletter) sont utilisées exclusivement pour traiter votre demande et ne sont jamais revendues à des tiers.</p>
+      <p>Conformément à la réglementation ivoirienne sur la protection des données personnelles, vous pouvez demander l'accès, la rectification ou la suppression de vos données en écrivant à contact@hotelmt.com.</p>
+    </div>
+    <div id="modalCgv" style="display:none;">
+      <h3>Conditions générales de vente</h3>
+      <p>Check-in à partir de 14h00, check-out avant 12h00. Toute réservation en ligne fait l'objet d'une confirmation par téléphone ou WhatsApp sous 24h.</p>
+      <p>Annulation gratuite jusqu'à 48h avant l'arrivée. Passé ce délai, la première nuit peut être facturée. Paiement accepté en espèces, Mobile Money (Orange Money, Wave, MTN) ou virement.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ============================================================
+   DATA
+   ============================================================ */
+var ROOMS = [
+  { id:'standard', cat:'economique', price:20000, name:{fr:'Standard', en:'Standard'}, desc:{fr:'Chambre climatisée avec TV et Wi-Fi gratuit.', en:'Air-conditioned room with TV and free Wi-Fi.'} },
+  { id:'junior', cat:'economique', price:25000, name:{fr:'Junior', en:'Junior'}, desc:{fr:'Chambre climatisée confortable avec équipements complets.', en:'Comfortable air-conditioned room, fully equipped.'} },
+  { id:'senior', cat:'confort', price:30000, name:{fr:'Senior', en:'Senior'}, desc:{fr:'Chambre spacieuse avec vue et équipements premium.', en:'Spacious room with a view and premium amenities.'} },
+  { id:'mini-suite', cat:'confort', price:50000, name:{fr:'Mini Suite', en:'Mini Suite'}, desc:{fr:'Suite confortable avec espace salon.', en:'Comfortable suite with a lounge area.'} },
+  { id:'suite-prestige', cat:'prestige', price:70000, name:{fr:'Suite Prestige', en:'Prestige Suite'}, desc:{fr:'Suite luxueuse avec tous les équipements haut de gamme.', en:'Luxurious suite with top-of-the-range amenities.'} },
+  { id:'suite-royale', cat:'prestige', price:100000, name:{fr:'Suite Royale', en:'Royal Suite'}, desc:{fr:'Notre suite la plus luxueuse pour un séjour exceptionnel.', en:'Our most luxurious suite for an exceptional stay.'} }
+];
+
+var GALLERY = [
+  {cat:'chambres', fr:'Chambre Standard', en:'Standard room'},
+  {cat:'chambres', fr:'Chambre Junior', en:'Junior room'},
+  {cat:'chambres', fr:'Chambre Senior', en:'Senior room'},
+  {cat:'chambres', fr:'Mini Suite', en:'Mini Suite'},
+  {cat:'chambres', fr:'Suite Prestige', en:'Prestige Suite'},
+  {cat:'chambres', fr:'Suite Royale', en:'Royal Suite'},
+  {cat:'restaurant', fr:'Salle du restaurant', en:'Restaurant hall'},
+  {cat:'restaurant', fr:'Cuisine gastronomique', en:'Gastronomic cuisine'},
+  {cat:'restaurant', fr:'Petit-déjeuner', en:'Breakfast'},
+  {cat:'bar', fr:'Bar lounge', en:'Lounge bar'},
+  {cat:'bar', fr:'Carte des cocktails', en:'Cocktail menu'},
+  {cat:'bar', fr:'Terrasse du bar', en:'Bar terrace'},
+  {cat:'piscine', fr:'Piscine à débordement', en:'Infinity pool'},
+  {cat:'piscine', fr:'Transats piscine', en:'Pool loungers'},
+  {cat:'piscine', fr:'Vue sur la piscine', en:'Pool view'},
+  {cat:'chambres', fr:'Salle de conférence', en:'Conference room'}
+];
+
+var FAQ = [
+  { q:{fr:'Quel est le meilleur hôtel à Agnibilékrou ?', en:'What is the best hotel in Agnibilékrou?'},
+    a:{fr:"L'Hôtel MT propose des chambres climatisées, un bar lounge élégant et un restaurant gastronomique avec cuisine ivoirienne et internationale.", en:'Hôtel MT offers air-conditioned rooms, an elegant lounge bar and a restaurant serving Ivorian and international cuisine.'} },
+  { q:{fr:"Quels services propose l'hôtel ?", en:'What services does the hotel offer?'},
+    a:{fr:'Chambres climatisées, bar lounge, restaurant, Wi-Fi gratuit, blanchisserie, parking sécurisé gratuit et réception ouverte 24h/24.', en:'Air-conditioned rooms, lounge bar, restaurant, free Wi-Fi, laundry, free secure parking and 24/7 reception.'} },
+  { q:{fr:'Quels sont les tarifs des chambres ?', en:'What are the room rates?'},
+    a:{fr:'De 20 000 FCFA (Standard) à 100 000 FCFA (Suite Royale) la nuit — voir le détail dans la section Chambres.', en:'From 20,000 FCFA (Standard) to 100,000 FCFA (Royal Suite) per night — see the Rooms section for details.'} },
+  { q:{fr:"Comment réserver une chambre ?", en:'How do I book a room?'},
+    a:{fr:'Directement sur ce site, par téléphone au +225 07 59 70 70 62, ou par WhatsApp. Confirmation sous 24h.', en:'Directly on this site, by phone at +225 07 59 70 70 62, or via WhatsApp. Confirmed within 24h.'} },
+  { q:{fr:'Quelle est la politique d\u2019annulation ?', en:'What is the cancellation policy?'},
+    a:{fr:"Annulation gratuite jusqu'à 48h avant l'arrivée. Passé ce délai, la première nuit peut être facturée.", en:'Free cancellation up to 48h before arrival. After that, the first night may be charged.'} },
+  { q:{fr:'Quels moyens de paiement acceptez-vous ?', en:'What payment methods do you accept?'},
+    a:{fr:'Espèces, Mobile Money (Orange Money, Wave, MTN Money) et virement bancaire.', en:'Cash, Mobile Money (Orange Money, Wave, MTN Money) and bank transfer.'} },
+  { q:{fr:"L'hôtel est-il proche de la frontière du Ghana ?", en:'Is the hotel close to the Ghana border?'},
+    a:{fr:'Oui, Agnibilékrou est proche de la frontière — idéal pour les voyageurs en transit entre les deux pays.', en:'Yes, Agnibilékrou is close to the border — ideal for travellers transiting between the two countries.'} }
+];
+
+var I18N = {
+  fr: {}, // populated from data-i18n defaults already in HTML (fr is the source markup)
+  en: {
+    'nav.home':'Home','nav.about':'About','nav.rooms':'Rooms','nav.services':'Services','nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','nav.book':'Book now',
+    'hero.kicker':"Agnibilékrou · Indénié-Djuablin · Ivory Coast",
+    'hero.title':"A <em>safe, refined</em> stop on the road from Abidjan to Ghana",
+    'hero.lead':"Air-conditioned rooms, a gastronomic restaurant, lounge bar and pool — built for business travellers, families and cross-border travellers.",
+    'hero.cta1':'Check availability','hero.cta2':'View rooms',
+    'hero.stat1':'Rooms & suites','hero.stat2':'Years of experience','hero.stat3':'126 guest reviews','hero.stat4':'Reception open',
+    'hero.routeTitle':'On your route',
+    'hero.d1':'≈ 280 km south-west','hero.d2':'≈ 45 km — closest stop','hero.d3':'Residential district, opposite the gendarmerie','hero.ghana':'Ghana border','hero.d4':'Easy access for transiting travellers',
+    'hero.arrival':'Check-in','hero.departure':'Check-out','hero.roomType':'Room type','hero.allCategories':'All categories','hero.checkBtn':'Check availability',
+    'about.eyebrow':'Our story','about.title':'Founded in 2017, rooted in cocoa country',
+    'about.p1':"Located in the residential district, opposite the gendarmerie, Hôtel MT has become a reference for accommodation in Agnibilékrou, a town in the Indénié-Djuablin region known for cocoa production and its proximity to the Ghanaian border.",
+    'about.p2':'Our team combines warm hospitality with modern standards: 39 rooms, a gastronomic restaurant, a lounge bar, an infinity pool and a modular conference room seating 80.',
+    'about.quote':'"Since 2017, Hôtel MT has embodied our vision of sincere hospitality, rooted in Ivorian values of welcome and generosity."',
+    'about.role':'General Manager — Hôtel MT Agnibilékrou',
+    'about.s1':'Rooms','about.s2':'Restaurant & Bar','about.s3':'Conference seats',
+    'rooms.eyebrow':'Accommodation','rooms.title':'Six room categories, one standard of care','rooms.sub':'Filter by budget to find the room that fits your stay.',
+    'rooms.filterAll':'All','rooms.filterEco':'Budget · under 30,000','rooms.filterConfort':'Comfort · 30,000–50,000','rooms.filterPrestige':'Prestige · 50,000+',
+    'rooms.book':'Book','rooms.perNight':'/ night',
+    'services.eyebrow':'Amenities','services.title':'Everything for a frictionless stay',
+    'services.s1t':'Gastronomic restaurant','services.s1p':'Ivorian and international cuisine, local produce, room service available.',
+    'services.s2t':'Events & conferences','services.s2p':'Modular hall for up to 80 people, equipped for seminars and receptions.',
+    'services.s3t':'Pool & lounge bar','services.s3p':'Infinity pool and cocktail menu for relaxed evenings.',
+    'services.s4t':'High-speed Wi-Fi (Starlink)','services.s4p':'Free connection in every room and common area.',
+    'services.s5t':'Laundry & secure parking','services.s5p':'Laundry service on request and free guarded parking.',
+    'services.s6t':'24/7 reception','services.s6p':'Late arrivals and early departures handled any time, every day.',
+    'booking.eyebrow':'Reservation','booking.title':'Book online, confirm on WhatsApp','booking.sub':'The rate is calculated automatically from your dates. No card required to book.',
+    'booking.sideTitle':'Need help?','booking.sideText':'Our team is available 24/7 to confirm your booking by phone or WhatsApp.',
+    'booking.checkinout':'Check-in 2:00pm · Check-out 12:00pm',
+    'booking.name':'Full name','booking.email':'Email','booking.phone':'Phone','booking.guests':'Number of guests','booking.note':'Message (optional)','booking.notePh':'Special requests, arrival time...',
+    'booking.errRequired':'This field is required.','booking.errEmail':'Invalid email address.','booking.errPhone':'Invalid number (min. 8 digits).','booking.errDates':'Check-out must be after check-in.',
+    'booking.summaryLabel':'Length of stay','booking.nights':'night(s)','booking.totalLabel':'Estimated total',
+    'booking.submit':'Confirm booking request','booking.viaWhatsapp':'Pre-fill on WhatsApp',
+    'booking.successTitle':'Request received ✓','booking.successText':'Thank you! Summary below — confirm by phone or WhatsApp to guarantee your room.',
+    'booking.confirmWhatsapp':'Confirm on WhatsApp','booking.confirmPhone':'Confirm by phone',
+    'gallery.eyebrow':'Gallery','gallery.title':'The hotel in pictures','gallery.all':'All','gallery.rooms':'Rooms','gallery.restaurant':'Restaurant','gallery.bar':'Bar','gallery.pool':'Pool',
+    'testi.eyebrow':'Reviews','testi.title':'What our guests say',
+    'testi.q1':'An exceptional stay! Impeccable service, spacious rooms and a lounge bar that\u2019s perfect for unwinding.',
+    'testi.q2':'Perfect location on the road to Ghana, breathtaking view from our suite. Very attentive staff.',
+    'testi.q3':'We held our annual seminar here. Well-equipped hall, excellent food and flawless Starlink Wi-Fi.',
+    'faq.eyebrow':'FAQ','faq.title':'Everything to know before your stay',
+    'contact.eyebrow':'Contact','contact.title':'Get in touch','contact.subject':'Subject','contact.send':'Send message','contact.success':'Message sent ✓ We reply within 24h.',
+    'contact.address':'Residential district, opposite the gendarmerie, Agnibilékrou','contact.copy':'Copy','contact.hours':'Monday – Sunday, 24/7','contact.directions':'🚗 Get directions',
+    'nl.eyebrow':'Newsletter','nl.title':'Get our special offers','nl.ph':'Your email address','nl.submit':'Subscribe','nl.success':"Thanks! You'll hear from us soon. ✓",
+    'footer.tagline':'The go-to stop in Agnibilékrou: modern comfort, Ivorian hospitality and round-the-clock service.',
+    'footer.linksTitle':'Quick links','footer.servicesTitle':'Services','footer.newsletterTitle':'Newsletter','footer.newsletterText':'Subscribe higher up the page to receive our offers and news.',
+    'footer.s1':'Accommodation','footer.s2':'Dining','footer.s3':'Events','footer.s4':'Pool & bar',
+    'footer.rights':'All rights reserved.','footer.legal':'Legal notice','footer.privacy':'Privacy','footer.terms':'Terms'
+  }
+};
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+function $(sel, ctx){ return (ctx||document).querySelector(sel); }
+function $all(sel, ctx){ return Array.prototype.slice.call((ctx||document).querySelectorAll(sel)); }
+function fmtXOF(n){
+  try{ return new Intl.NumberFormat('fr-FR').format(n) + ' XOF'; }
+  catch(e){ return n + ' XOF'; }
+}
+function todayISO(){
+  var d = new Date();
+  return d.toISOString().slice(0,10);
+}
+function addDaysISO(iso, days){
+  var d = new Date(iso + 'T00:00:00');
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0,10);
+}
+function nightsBetween(inIso, outIso){
+  if(!inIso || !outIso) return 0;
+  var a = new Date(inIso + 'T00:00:00'), b = new Date(outIso + 'T00:00:00');
+  var diff = Math.round((b - a) / 86400000);
+  return diff > 0 ? diff : 0;
+}
+
+var currentLang = 'fr';
+/* snapshot fr text from DOM before any mutation, so toggling back to fr is lossless */
+var FR_SNAPSHOT = {};
+$all('[data-i18n]').forEach(function(el){ FR_SNAPSHOT[el.getAttribute('data-i18n')] = el.innerHTML; });
+var FR_PH_SNAPSHOT = {};
+$all('[data-i18n-placeholder]').forEach(function(el){ FR_PH_SNAPSHOT[el.getAttribute('data-i18n-placeholder')] = el.getAttribute('placeholder'); });
+
+function applyLang(lang){
+  currentLang = lang;
+  document.documentElement.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang);
+  var dict = lang === 'en' ? I18N.en : null;
+  $all('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(lang === 'fr'){ el.innerHTML = FR_SNAPSHOT[key]; }
+    else if(dict[key] !== undefined){ el.innerHTML = dict[key]; }
+  });
+  $all('[data-i18n-placeholder]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-placeholder');
+    if(lang === 'fr'){ el.setAttribute('placeholder', FR_PH_SNAPSHOT[key]); }
+    else if(dict[key] !== undefined){ el.setAttribute('placeholder', dict[key]); }
+  });
+  $all('[data-lang-btn]').forEach(function(btn){
+    btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+  });
+  renderRooms();
+  renderGallery();
+  renderFAQ();
+  populateRoomSelect();
+}
+$all('[data-lang-btn]').forEach(function(btn){
+  btn.addEventListener('click', function(){ applyLang(btn.getAttribute('data-lang-btn')); });
+});
+
+/* ============================================================
+   NAVBAR: scroll state, mobile menu, active link
+   ============================================================ */
+var navbar = $('#navbar'), navLinks = $('#navLinks'), navBurger = $('#navBurger');
+function onScrollNav(){
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  $('#fabTop').classList.toggle('show', window.scrollY > 500);
+}
+window.addEventListener('scroll', onScrollNav, {passive:true});
+onScrollNav();
+
+navBurger.addEventListener('click', function(){
+  var open = navLinks.classList.toggle('open');
+  navBurger.classList.toggle('open', open);
+  navBurger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+$all('#navLinks a').forEach(function(a){
+  a.addEventListener('click', function(){
+    navLinks.classList.remove('open');
+    navBurger.classList.remove('open');
+    navBurger.setAttribute('aria-expanded','false');
+  });
+});
+
+var sections = $all('section[id]');
+var navA = $all('#navLinks a[href^="#"]');
+function onScrollActive(){
+  var pos = window.scrollY + 120;
+  var current = sections[0] && sections[0].id;
+  sections.forEach(function(sec){ if(pos >= sec.offsetTop) current = sec.id; });
+  navA.forEach(function(a){
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}
+window.addEventListener('scroll', onScrollActive, {passive:true});
+onScrollActive();
+
+/* ============================================================
+   REVEAL ON SCROLL
+   ============================================================ */
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:0.12});
+  $all('.reveal').forEach(function(el){ io.observe(el); });
+} else {
+  $all('.reveal').forEach(function(el){ el.classList.add('in'); });
+}
+
+/* ============================================================
+   ROOMS: render + filter
+   ============================================================ */
+function roomCategoryLabel(cat){
+  var map = { economique:{fr:'Économique', en:'Budget'}, confort:{fr:'Confort', en:'Comfort'}, prestige:{fr:'Prestige', en:'Prestige'} };
+  return map[cat][currentLang];
+}
+function renderRooms(){
+  var grid = $('#roomsGrid');
+  var activeFilter = ($('#roomFilters .filter-chip.active') || {}).getAttribute ? $('#roomFilters .filter-chip.active').getAttribute('data-filter') : 'all';
+  grid.innerHTML = '';
+  ROOMS.forEach(function(r){
+    var card = document.createElement('div');
+    card.className = 'room-card';
+    card.setAttribute('data-cat', r.cat);
+    if(activeFilter && activeFilter !== 'all' && r.cat !== activeFilter) card.classList.add('hide');
+    card.innerHTML =
+      '<div class="room-media"><div class="tag">' + roomCategoryLabel(r.cat) + '</div><div class="ph">' + r.name[currentLang] + '</div></div>' +
+      '<div class="room-body">' +
+        '<h3>' + r.name[currentLang] + '</h3>' +
+        '<p>' + r.desc[currentLang] + '</p>' +
+        '<div class="room-price"><b>' + fmtXOF(r.price) + '</b><span>' + (currentLang==='en' ? '/ night' : '/ nuit') + '</span></div>' +
+        '<div class="room-foot"><button class="btn btn-gold btn-sm btn-book-room" data-room="' + r.id + '">' + (currentLang==='en' ? 'Book' : 'Réserver') + '</button></div>' +
+      '</div>';
+    grid.appendChild(card);
+  });
+  $all('.btn-book-room').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-room');
+      $('#bkRoom').value = id;
+      recalcBooking();
+      document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){ $('#bkName').focus(); }, 500);
+    });
+  });
+}
+$all('#roomFilters .filter-chip').forEach(function(chip){
+  chip.addEventListener('click', function(){
+    $all('#roomFilters .filter-chip').forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    var f = chip.getAttribute('data-filter');
+    $all('#roomsGrid .room-card').forEach(function(card){
+      card.classList.toggle('hide', f !== 'all' && card.getAttribute('data-cat') !== f);
+    });
+  });
+});
+
+function populateRoomSelect(){
+  var sel = $('#bkRoom');
+  var prev = sel.value;
+  sel.innerHTML = '';
+  ROOMS.forEach(function(r){
+    var opt = document.createElement('option');
+    opt.value = r.id;
+    opt.textContent = r.name[currentLang] + ' — ' + fmtXOF(r.price);
+    sel.appendChild(opt);
+  });
+  if(prev){ sel.value = prev; }
+}
+
+/* ============================================================
+   GALLERY: render + filter + lightbox
+   ============================================================ */
+var galleryFilteredIndexes = [];
+var lightboxIndex = 0;
+
+function renderGallery(){
+  var grid = $('#galleryGrid');
+  var activeF = $('#galleryFilters .filter-chip.active').getAttribute('data-gfilter');
+  grid.innerHTML = '';
+  GALLERY.forEach(function(item, i){
+    var el = document.createElement('div');
+    el.className = 'gallery-item';
+    el.setAttribute('data-cat', item.cat);
+    el.setAttribute('data-index', i);
+    if(activeF !== 'all' && item.cat !== activeF) el.classList.add('hide');
+    el.innerHTML = '<span>' + item[currentLang] + '</span>';
+    el.addEventListener('click', function(){ openLightbox(i); });
+    grid.appendChild(el);
+  });
+}
+$all('#galleryFilters .filter-chip').forEach(function(chip){
+  chip.addEventListener('click', function(){
+    $all('#galleryFilters .filter-chip').forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    var f = chip.getAttribute('data-gfilter');
+    $all('#galleryGrid .gallery-item').forEach(function(el){
+      el.classList.toggle('hide', f !== 'all' && el.getAttribute('data-cat') !== f);
+    });
+  });
+});
+
+var lightbox = $('#lightbox');
+function visibleGalleryIndexes(){
+  return $all('#galleryGrid .gallery-item:not(.hide)').map(function(el){ return parseInt(el.getAttribute('data-index'),10); });
+}
+function openLightbox(index){
+  lightboxIndex = index;
+  galleryFilteredIndexes = visibleGalleryIndexes();
+  updateLightbox();
+  lightbox.classList.add('open');
+  $('#lightboxClose').focus();
+}
+function updateLightbox(){
+  var item = GALLERY[lightboxIndex];
+  $('#lightboxFrame').textContent = item[currentLang];
+  $('#lightboxCaption').textContent = (galleryFilteredIndexes.indexOf(lightboxIndex)+1) + ' / ' + galleryFilteredIndexes.length + ' — ' + item[currentLang];
+}
+function closeLightbox(){ lightbox.classList.remove('open'); }
+$('#lightboxClose').addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
+$('#lightboxPrev').addEventListener('click', function(){ step(-1); });
+$('#lightboxNext').addEventListener('click', function(){ step(1); });
+function step(dir){
+  var pos = galleryFilteredIndexes.indexOf(lightboxIndex);
+  pos = (pos + dir + galleryFilteredIndexes.length) % galleryFilteredIndexes.length;
+  lightboxIndex = galleryFilteredIndexes[pos];
+  updateLightbox();
+}
+document.addEventListener('keydown', function(e){
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') step(-1);
+  if(e.key === 'ArrowRight') step(1);
+});
+
+/* ============================================================
+   TESTIMONIALS carousel
+   ============================================================ */
+var tSlides = $all('#tcarousel .tslide');
+var tIndex = 0, tTimer;
+var tDotsWrap = $('#tDots');
+tSlides.forEach(function(_, i){
+  var d = document.createElement('button');
+  d.className = 'tdot' + (i===0 ? ' active' : '');
+  d.setAttribute('aria-label', 'Témoignage ' + (i+1));
+  d.addEventListener('click', function(){ goToSlide(i); });
+  tDotsWrap.appendChild(d);
+});
+function goToSlide(i){
+  tSlides[tIndex].classList.remove('active');
+  $all('.tdot')[tIndex].classList.remove('active');
+  tIndex = (i + tSlides.length) % tSlides.length;
+  tSlides[tIndex].classList.add('active');
+  $all('.tdot')[tIndex].classList.add('active');
+}
+$('#tPrev').addEventListener('click', function(){ goToSlide(tIndex-1); resetAutoplay(); });
+$('#tNext').addEventListener('click', function(){ goToSlide(tIndex+1); resetAutoplay(); });
+function startAutoplay(){ tTimer = setInterval(function(){ goToSlide(tIndex+1); }, 6000); }
+function resetAutoplay(){ clearInterval(tTimer); startAutoplay(); }
+var tcarousel = $('#tcarousel');
+tcarousel.addEventListener('mouseenter', function(){ clearInterval(tTimer); });
+tcarousel.addEventListener('mouseleave', startAutoplay);
+startAutoplay();
+
+/* ============================================================
+   FAQ accordion
+   ============================================================ */
+function renderFAQ(){
+  var list = $('#faqList');
+  list.innerHTML = '';
+  FAQ.forEach(function(item, i){
+    var wrap = document.createElement('div');
+    wrap.className = 'faq-item';
+    wrap.innerHTML =
+      '<button class="faq-q" aria-expanded="false"><span>' + item.q[currentLang] + '</span><span class="plus">+</span></button>' +
+      '<div class="faq-a"><p>' + item.a[currentLang] + '</p></div>';
+    var btn = wrap.querySelector('.faq-q');
+    var ans = wrap.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = wrap.classList.contains('open');
+      wrap.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', (!isOpen).toString());
+      ans.style.maxHeight = !isOpen ? ans.scrollHeight + 'px' : '0px';
+    });
+    list.appendChild(wrap);
+  });
+}
+
+/* ============================================================
+   BOOKING form: dynamic price + validation + whatsapp deep link
+   ============================================================ */
+var bkIn = $('#bkIn'), bkOut = $('#bkOut'), bkRoom = $('#bkRoom'), bkGuests = $('#bkGuests');
+var qcIn = $('#qcIn'), qcOut = $('#qcOut');
+
+[bkIn, qcIn].forEach(function(inp){ inp.min = todayISO(); });
+
+function syncMinCheckout(){
+  if(bkIn.value){ bkOut.min = addDaysISO(bkIn.value, 1); if(bkOut.value && bkOut.value <= bkIn.value){ bkOut.value = addDaysISO(bkIn.value,1); } }
+  if(qcIn.value){ qcOut.min = addDaysISO(qcIn.value, 1); }
+}
+bkIn.addEventListener('change', function(){ syncMinCheckout(); recalcBooking(); });
+bkOut.addEventListener('change', recalcBooking);
+bkRoom.addEventListener('change', recalcBooking);
+qcIn.addEventListener('change', syncMinCheckout);
+
+function currentRoom(){
+  return ROOMS.filter(function(r){ return r.id === bkRoom.value; })[0] || ROOMS[0];
+}
+function recalcBooking(){
+  var n = nightsBetween(bkIn.value, bkOut.value);
+  var room = currentRoom();
+  var total = n * (room ? room.price : 0);
+  $('#bkNights').innerHTML = (n || '—') + ' <span>' + (currentLang==='en' ? 'night(s)' : 'nuit(s)') + '</span>';
+  $('#bkTotal').textContent = fmtXOF(total);
+  return {nights:n, total:total, room:room};
+}
+populateRoomSelect();
+recalcBooking();
+
+function setFieldError(field, show){
+  field.closest('.field').classList.toggle('invalid', !!show);
+}
+function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+function validPhone(v){ return v.replace(/[^0-9]/g,'').length >= 8; }
+
+var bookingForm = $('#bookingForm');
+bookingForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  var ok = true;
+  var name = $('#bkName'), email = $('#bkEmail'), phone = $('#bkPhone');
+
+  setFieldError(name, !name.value.trim()); if(!name.value.trim()) ok = false;
+  setFieldError(email, !validEmail(email.value)); if(!validEmail(email.value)) ok = false;
+  setFieldError(phone, !validPhone(phone.value)); if(!validPhone(phone.value)) ok = false;
+  setFieldError(bkIn, !bkIn.value); if(!bkIn.value) ok = false;
+
+  var n = nightsBetween(bkIn.value, bkOut.value);
+  var datesOk = !!bkIn.value && !!bkOut.value && n > 0;
+  bkOut.closest('.field').classList.toggle('invalid', !datesOk);
+  if(!datesOk) ok = false;
+
+  if(!ok) return;
+
+  var calc = recalcBooking();
+  var msg = buildWhatsappMessage(name.value, calc);
+  $('#successWhatsapp').setAttribute('href', 'https://wa.me/2250759707062?text=' + encodeURIComponent(msg));
+  $('#bookingSuccess').classList.add('show');
+  $('#bookingSuccess').scrollIntoView({behavior:'smooth', block:'center'});
+});
+
+function buildWhatsappMessage(name, calc){
+  var room = calc.room;
+  var lines = currentLang === 'en'
+    ? ['Hello, I would like to book at Hôtel MT:', 'Name: ' + name, 'Room: ' + room.name.en, 'Check-in: ' + bkIn.value, 'Check-out: ' + bkOut.value, 'Nights: ' + calc.nights, 'Guests: ' + bkGuests.value, 'Estimated total: ' + fmtXOF(calc.total)]
+    : ['Bonjour, je souhaite réserver à l\'Hôtel MT :', 'Nom : ' + name, 'Chambre : ' + room.name.fr, 'Arrivée : ' + bkIn.value, 'Départ : ' + bkOut.value, 'Nuits : ' + calc.nights, 'Personnes : ' + bkGuests.value, 'Total estimé : ' + fmtXOF(calc.total)];
+  return lines.join('\n');
+}
+
+$('#bkWhatsapp').addEventListener('click', function(){
+  var calc = recalcBooking();
+  var name = $('#bkName').value || (currentLang==='en' ? 'Guest' : 'Client');
+  var msg = buildWhatsappMessage(name, calc);
+  window.open('https://wa.me/2250759707062?text=' + encodeURIComponent(msg), '_blank');
+});
+
+/* quick-check widget in hero scrolls down and pre-fills booking form */
+$('#quickCheckForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  bkIn.value = qcIn.value; bkOut.value = qcOut.value;
+  if($('#qcRoom').value){ bkRoom.value = $('#qcRoom').value; }
+  syncMinCheckout();
+  recalcBooking();
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+});
+
+/* ============================================================
+   CONTACT form (client-side validation + confirmation)
+   ============================================================ */
+$('#contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var ok = true;
+  var name = $('#cName'), email = $('#cEmail'), subj = $('#cSubject'), msg = $('#cMsg');
+  setFieldError(name, !name.value.trim()); if(!name.value.trim()) ok=false;
+  setFieldError(email, !validEmail(email.value)); if(!validEmail(email.value)) ok=false;
+  setFieldError(subj, !subj.value.trim()); if(!subj.value.trim()) ok=false;
+  setFieldError(msg, !msg.value.trim()); if(!msg.value.trim()) ok=false;
+  if(!ok) return;
+  $('#contactSuccess').style.display = 'block';
+  this.reset();
+});
+
+/* copy phone number */
+$('#copyPhone').addEventListener('click', function(){
+  var text = '+225 07 59 70 70 62';
+  var done = function(){ var old = this.textContent; this.textContent = currentLang==='en' ? 'Copied ✓' : 'Copié ✓'; var self=this; setTimeout(function(){ self.textContent = old; }, 1800); }.bind(this);
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(function(){});
+  }
+});
+
+/* ============================================================
+   NEWSLETTER form
+   ============================================================ */
+$('#nlForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var email = $('#nlEmail');
+  if(!validEmail(email.value)){ email.style.borderColor = 'var(--clay)'; return; }
+  email.style.borderColor = '';
+  $('#nlMsg').classList.add('show');
+  this.reset();
+});
+
+/* ============================================================
+   BACK TO TOP
+   ============================================================ */
+$('#fabTop').addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+/* ============================================================
+   LEGAL MODALS
+   ============================================================ */
+var modalOverlay = $('#modalOverlay');
+var modalMap = { mentions:'#modalMentions', confidentialite:'#modalConfidentialite', cgv:'#modalCgv' };
+$all('[data-modal]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    Object.keys(modalMap).forEach(function(k){ $(modalMap[k]).style.display = 'none'; });
+    $(modalMap[btn.getAttribute('data-modal')]).style.display = 'block';
+    modalOverlay.classList.add('open');
+  });
+});
+$('#modalClose').addEventListener('click', function(){ modalOverlay.classList.remove('open'); });
+modalOverlay.addEventListener('click', function(e){ if(e.target === modalOverlay) modalOverlay.classList.remove('open'); });
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape') modalOverlay.classList.remove('open'); });
+
+/* ============================================================
+   INIT
+   ============================================================ */
+renderRooms();
+renderGallery();
+renderFAQ();
+
+})();
+</script>
+</body>
+</html>
